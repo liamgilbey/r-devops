@@ -5,14 +5,11 @@ date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
-bibliography: [book.bib, packages.bib]
-biblio-style: apalike
-link-citations: yes
 github-repo: liamgilbey/r-devops
 description: "This book is here to help R users get familiar with DevOps principles. Using an example project along the way, you'll learn how to deploy Shiny apps, Plumber APIs, as well as developing good skills for handling R projects used on a regular basis."
 ---
 
-## Welcome 
+# Welcome 
 
 This is the electronic home for _DevOps for R_. Over the last several years, R has made great strides in making the outputs of data science available to non-technical users. 
 Packages such as [shiny](https://github.com/rstudio/shiny) and [plumber](https://github.com/rstudio/plumber) have done wonders to enable R users to expose their 
