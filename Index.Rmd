@@ -12,7 +12,7 @@ github-repo: liamgilbey/r-devops
 description: "This book is here to help R users get familiar with DevOps principles. Using an example project along the way, you'll learn how to deploy Shiny apps, Plumber APIs, as well as developing good skills for handling R projects used on a regular basis."
 ---
 
-## Welcome {.unnumbered}
+## Welcome 
 
 This is the electronic home for _DevOps for R_. Over the last several years, R has made great strides in making the outputs of data science available to non-technical users. 
 Packages such as [shiny](https://github.com/rstudio/shiny) and [plumber](https://github.com/rstudio/plumber) have done wonders to enable R users to expose their 
@@ -20,10 +20,49 @@ amazing work in web applications and web APIs. However, many R users have come f
 the aforementioned packages have gone a long way to empowering users to develop data science applications, there is a knowledge gap in taking this work into a production 
 environment.
 
-This book intends to bridge this gap. While it is designed for R users, it features very little R at all. Instead, you'll learn how to use a set of open-source tools 
+This book intends to bridge this gap. While it is designed for R users, it features very little R at all. Instead, you'll learn how to use a set of open source tools 
 to interact with your R projects to turn them into production-ready applications. I will preface the book by saying that the set of tools I have chosen to demonstrate 
 are not the definitive set of tools to do the job. Like any technical problem, there any many ways to achieve what is described in this book. What is discussed here 
-is focused on the use of open-source tools that can be used an deployed by anyone, in any environment.
+is focused on the use of open source tools that can be used an deployed by anyone, in any environment.
 
 Like countless other R books created through [bookdown](https://github.com/rstudio/bookdown), this book is open source. All of it's content is reproducible and accessible 
-by anyone who is interested.
+by anyone who is interested [here](https://github.com/liamgilbey/r-devops).
+
+# Example project 
+
+## Overview
+
+Reading books is a great way to get familiar with a concept, but I'm sure most readers would agree that learning by following an example is the best way to solidify
+your knowledge of new concepts. To that point, we will be following the steps required to take a simple set of R applications into a deployed state
+using a set of open source tools. Along the way we will cover Shiny applications, Plumber APIs and general DevOps principles that can by applied to frequently used 
+sets of R code. 
+
+The example project exists as a [companion repository](https://github.com/liamgilbey/r-devops-project) which I encourage you to clone and follow along as we progress 
+through the book. Git has of course not been covered yet, but for those of you who are already familiar with this technology, cloning the repository is simple:
+
+```sh
+git clone https://github.com/liamgilbey/r-devops-project.git
+```
+
+If you are not yet familiar with git, do not worry. The companion project can be just as easily downloaded as a zip file from [here](https://github.com/liamgilbey/r-devops-project/archive/main.zip).
+
+
+## What this will not cover
+
+Although this is a book designed for R users, it is not a book about R. As such, it will not go into detail about topics such as crafting amazing Shiny applications, 
+or mastering Plumber APIs. We will follow minimal working examples for these topics, and focus on how to effectively deploy these to production. There are already 
+many fantastic resources that cover these topics, all of which go into more detail than is appropriate here.
+
+
+
+# Software information
+
+There are many sets of tools to achieve what is being described in this book, each with their own opinions on how this task should be done. The set of tools have been
+chosen because they are all open source, and have been shown to work incredibly well together. The tools that are going to be covered include:
+
+* [git](https://git-scm.com/)
+* [docker](https://github.com/docker)
+* [docker-compose](https://github.com/docker/compose)
+* [traefik](https://github.com/traefik/traefik)
+* [gitlab](https://gitlab.com/gitlab-org/gitlab)
+* [gitlab-runner](https://docs.gitlab.com/runner/)
