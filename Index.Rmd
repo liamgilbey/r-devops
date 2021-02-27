@@ -1,0 +1,29 @@
+--- 
+title: "DevOps for R"
+author: "Liam Gilbey"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: liamgilbey/r-devops
+description: "This book is here to help R users get familiar with DevOps principles. Using an example project along the way, you'll learn how to deploy Shiny apps, Plumber APIs, as well as developing good skills for handling R projects used on a regular basis."
+---
+
+## Welcome {.unnumbered}
+
+This is the electronic home for _DevOps for R_. Over the last several years, R has made great strides in making the outputs of data science available to non-technical users. 
+Packages such as [shiny](https://github.com/rstudio/shiny) and [plumber](https://github.com/rstudio/plumber) have done wonders to enable R users to expose their 
+amazing work in web applications and web APIs. However, many R users have come from a background of needing to use R with very little formal programming education. While  
+the aforementioned packages have gone a long way to empowering users to develop data science applications, there is a knowledge gap in taking this work into a production 
+environment.
+
+This book intends to bridge this gap. While it is designed for R users, it features very little R at all. Instead, you'll learn how to use a set of open-source tools 
+to interact with your R projects to turn them into production-ready applications. I will preface the book by saying that the set of tools I have chosen to demonstrate 
+are not the definitive set of tools to do the job. Like any technical problem, there any many ways to achieve what is described in this book. What is discussed here 
+is focused on the use of open-source tools that can be used an deployed by anyone, in any environment.
+
+Like countless other R books created through [bookdown](https://github.com/rstudio/bookdown), this book is open source. All of it's content is reproducible and accessible 
+by anyone who is interested.
